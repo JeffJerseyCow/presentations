@@ -22,6 +22,7 @@ void __libc_start_main(size_t *main_addr)
   /* Call main */
   int ret = 0;
   ret = main_ptr(1, argv_ptr, NULL);
+  printf("[*] In '__libc_start_main'\n");
 
   /* Create func0 function pointer */
   int (*func0_ptr)(char *);
